@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <center>
+    <title>Student Placement Predictor</title>
+</head>
+<body style=" background: linear-gradient(to right, #403b4a, #e7e9bb); ">
+
+    <h1>Student Placement Predictor</h1>
+    {% if result %}
+        <p style="font-size: 25px;"><b>{{ result }}</b></p>
+    {% endif %}
+    <form method="post" action="/predict">
+        <label>CGPA</label><br>
+        <input type="text" name="cgpa"><br><br>
+
+        <label>IQ</label><br>
+        <input type="text" name="iq"><br><br>
+
+        <label>Profile Score</label><br>
+        <input type="text" name="profile_score"><br><br>
+
+        <input type="submit" value="Predict"><br><br>
+    </form>
+    
+
+     <div class="box">
+        <center>
+ <h2>By Using <b style="color: rgb(207, 73, 73);">Support Vector Machine</b> and <b style="color: rgb(21, 119, 184);">Microsoft Azure</b></h2>
+<br>
+<h3>Made By Meet Savani | <a href="https://www.github.com/meet78/" target="_blank">Github</a></h3>
+ 
+</center>
+
+
+    </div>
+
+</body>
+</html>
